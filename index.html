@@ -284,11 +284,11 @@ nav{
   padding-bottom:12px;border-bottom:1px solid var(--line);
 }
 .about-skill-item{
-  padding:14px 0;border-bottom:1px solid var(--line);
-  display:flex;justify-content:space-between;align-items:baseline;
+  display:inline-flex;flex-direction:column;align-items:flex-start;
+  padding:10px 16px;border:1px solid var(--line);margin:0 8px 8px 0;
 }
-.about-skill-en{font-size:13px;font-weight:300;color:var(--black);}
-.about-skill-ja{font-size:13px;font-weight:200;color:var(--gray-mid);font-family:'Noto Sans JP',sans-serif;}
+.about-skill-en{font-size:12px;font-weight:400;color:var(--black);letter-spacing:.04em;}
+.about-skill-ja{font-size:11px;font-weight:200;color:var(--gray-mid);font-family:'Noto Sans JP',sans-serif;margin-top:2px;}
 
 /* RESUME */
 .resume-hero{padding:100px max(32px, calc((100% - 1060px) / 2)) 60px;border-bottom:1px solid var(--line);}
@@ -304,7 +304,7 @@ nav{
 .resume-co-en{font-size:17px;font-weight:500;color:var(--black);letter-spacing:.01em;margin-bottom:3px;}
 .resume-co-ja{font-size:13px;font-weight:200;color:var(--gray-mid);font-family:'Noto Sans JP',sans-serif;margin-bottom:12px;}
 .resume-role-en{
-  font-family:'DM Serif Display',serif;
+  font-family:'DM Sans',sans-serif;
   font-size:22px;font-weight:400;color:var(--black);
   letter-spacing:-.01em;margin-bottom:4px;
 }
@@ -580,18 +580,14 @@ footer{
 
     <div class="resume-section">
       <div class="resume-section-label">Skills & Tools <span style="font-family:'Noto Sans JP';font-weight:200;font-size:13px;color:var(--gray-light);margin-left:16px;">スキル</span></div>
-      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0;">
-        <div>
-          <div class="about-skill-item"><span class="about-skill-en">Web Direction</span><span class="about-skill-ja">Webディレクション</span></div>
-          <div class="about-skill-item"><span class="about-skill-en">User Research & Interview</span><span class="about-skill-ja">ユーザーインタビュー・分析</span></div>
-          <div class="about-skill-item"><span class="about-skill-en">Competitive Analysis</span><span class="about-skill-ja">競合他社分析</span></div>
-          <div class="about-skill-item"><span class="about-skill-en">A/B Testing</span><span class="about-skill-ja">A/Bテスト設計</span></div>
-        </div>
-        <div style="padding-left:40px;">
-          <div class="about-skill-item"><span class="about-skill-en">KPI Measurement</span><span class="about-skill-ja">効果測定・KPI分析</span></div>
-          <div class="about-skill-item"><span class="about-skill-en">Figma / Photoshop / Illustrator</span><span class="about-skill-ja">デザインツール</span></div>
-          <div class="about-skill-item"><span class="about-skill-en">HTML / CSS</span><span class="about-skill-ja">コーディング</span></div>
-        </div>
+      <div style="display:flex;flex-wrap:wrap;">
+        <div class="about-skill-item"><span class="about-skill-en">Web Direction</span><span class="about-skill-ja">Webディレクション</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">User Research & Interview</span><span class="about-skill-ja">ユーザーインタビュー・分析</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">Competitive Analysis</span><span class="about-skill-ja">競合他社分析</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">A/B Testing</span><span class="about-skill-ja">A/Bテスト設計</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">KPI Measurement</span><span class="about-skill-ja">効果測定・KPI分析</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">Figma / Photoshop / Illustrator</span><span class="about-skill-ja">デザインツール</span></div>
+        <div class="about-skill-item"><span class="about-skill-en">HTML / CSS</span><span class="about-skill-ja">コーディング</span></div>
       </div>
     </div>
 
